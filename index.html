@@ -1,0 +1,227 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>UFAPAL — Data Quality & Issues</title>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+  <h1>UFAPAL — Rapport Data Quality & Issues</h1>
+
+  <p>⚠️ header.png non trouvé</p>
+
+  <h2>Résumé numérique</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Column</th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nombre de membres de l'OPA</td>
+      <td>95.0</td>
+      <td>203.978947</td>
+      <td>475.991395</td>
+      <td>20.0</td>
+      <td>50.000000</td>
+      <td>90.000000</td>
+      <td>175.500</td>
+      <td>4000.0</td>
+    </tr>
+    <tr>
+      <td>Nombre&nbsp;&nbsp;de femmes de l'OPA</td>
+      <td>95.0</td>
+      <td>134.936842</td>
+      <td>443.519119</td>
+      <td>3.0</td>
+      <td>26.500000</td>
+      <td>48.000000</td>
+      <td>90.000</td>
+      <td>4000.0</td>
+    </tr>
+    <tr>
+      <td>Nombre d'hommes de l'OPA</td>
+      <td>95.0</td>
+      <td>69.042105</td>
+      <td>102.629256</td>
+      <td>0.0</td>
+      <td>15.000000</td>
+      <td>35.000000</td>
+      <td>75.500</td>
+      <td>619.0</td>
+    </tr>
+    <tr>
+      <td>Pourcentage de Femme de les comités</td>
+      <td>95.0</td>
+      <td>11.330602</td>
+      <td>23.583109</td>
+      <td>0.2</td>
+      <td>0.482938</td>
+      <td>0.633333</td>
+      <td>11.055</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>Table complète</h2>
+  <table id="dataTable" class="display">
+    <thead><tr><th>Departement</th><th>Nom de l&#039;organisation</th><th>OPA du Réseau Principale</th><th> Abrégé de l&#039;organisation</th><th>Commune</th><th>Section Communale</th><th>l&#039;OPA est elle membre d&#039;un réseau</th><th>Nombre de membres de l&#039;OPA</th><th>Nombre  de femmes de l&#039;OPA</th><th>Nombre d&#039;hommes de l&#039;OPA</th><th>Pourcentage de Femme de les comités</th><th>Produits achetés à partir des membres</th><th>Année Enquete</th><th>Mois Enquete</th><th>SurveyDate</th><th>Form_Incomplete_Flag</th></tr></thead>
+    <tbody><tr><td>Centre</td><td>Association de groupement de femme Maissade</td><td>non</td><td>AGFM</td><td>Maissade</td><td>Ville</td><td>oui</td><td>225</td><td>225</td><td>0</td><td>1.0</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Inyon Peyizan pou devlopman  jounen</td><td>non</td><td>IPTD</td><td>Maissade</td><td>Tijounen</td><td>non</td><td>211</td><td>135</td><td>76</td><td>0.6666666666666666</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Organisation internationale pour la rennaissance d&#039;Haiti</td><td>non</td><td>OIRH</td><td>Cerca la Source</td><td>0</td><td>non</td><td>400</td><td>250</td><td>150</td><td>0.625</td><td>non</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Ass. Des habitants pour le developpement de Cerca Carvajal</td><td>non</td><td>AHDC</td><td>Cerca Carvajal</td><td>Rang</td><td>non</td><td>150</td><td>64</td><td>86</td><td>0.3333333333333333</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Moun Pèp   Naran</td><td>non</td><td>MOPENA</td><td>Maissade</td><td>Naran</td><td>oui</td><td>350</td><td>160</td><td>190</td><td>0.6666666666666666</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Mouvman Kilti Lakay</td><td>non</td><td>MOKLA</td><td>Cerca Carvajal</td><td>Ville</td><td>non</td><td>75</td><td>20</td><td>55</td><td>0.26666666666666666</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Inyon Peyizan pou devlopman M ayesad</td><td>non</td><td>IPDM</td><td>Maissade</td><td>Ville</td><td>non</td><td>2300</td><td>1725</td><td>575</td><td>0.3333333333333333</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Asosysyon peyizan agrikol Bebenal</td><td>non</td><td>APABEB </td><td>Maissade</td><td>ATI</td><td>oui</td><td>140</td><td>65</td><td>75</td><td>0.4</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Asosyasyon plantè  Cerca Carvajal</td><td>non</td><td>APC</td><td>Cerca Carvajal</td><td>Ville</td><td>non</td><td>144</td><td>80</td><td>64</td><td>0.35714285714285715</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association des jeunes interesses par le Developpement de losposos</td><td>oui</td><td>AJIDEL</td><td>Cerca la Source</td><td>Acajou brulé1</td><td>oui</td><td>180</td><td>110</td><td>70</td><td>0.6111111111111112</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td> Asosiyasyon Fanm Baltaza </td><td>non</td><td>UGACC-4 </td><td>Cerca la Source</td><td>Acajou brule 2</td><td>oui</td><td>150</td><td>75</td><td>75</td><td>0.6666666666666666</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association des planteurs pour le developpement de Cerca la Carvajal </td><td>non</td><td>ASPLADEC</td><td>Cerca Carvajal</td><td>Rang</td><td>non</td><td>50</td><td>15</td><td>35</td><td>0.3</td><td>non</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Symbiose des paysans pour l&#039;Emancipation du Centre</td><td>oui</td><td>SYMPEC</td><td>Hinche</td><td>Juanaria </td><td>oui</td><td>125</td><td>72</td><td>53</td><td>0.576</td><td>non</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association des travailleurs de payisan Salmory</td><td>oui</td><td>ATPS</td><td>Hinche</td><td>Juanaria 1</td><td>oui</td><td>630</td><td>400</td><td>230</td><td>0.7666666666666667</td><td>oui</td><td>2024.0</td><td>4</td><td>2024-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association des paysans pour le developpdement de Mile</td><td>non</td><td>APADEM</td><td>Cerca la Source</td><td>Mile</td><td>non</td><td>125</td><td>26</td><td>99</td><td>0.208</td><td>non</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Organisation pour le developpement Cerca Carvsajal</td><td>non</td><td>ODCC</td><td>Cerca Carvajal</td><td>Ville</td><td>oui</td><td>328</td><td>151</td><td>177</td><td>0.4603658536585366</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association du système d&#039;irrigation de Losposos</td><td>oui</td><td>ASIL</td><td>Cerca la Source</td><td>Acajou brulé 1</td><td>non</td><td>566</td><td>212</td><td>354</td><td>0.6</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association des paysans pour le developpdement  pour le developpement de Guadabier</td><td>non</td><td>APDG</td><td>Cerca la Source</td><td>                                                    Acajou brulé 2</td><td>non</td><td>120</td><td>70</td><td>50</td><td>0.5833333333333334</td><td>non</td><td>2024.0</td><td>4</td><td>2024-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Organisation pour le developpement Bissainte laroye</td><td>oui</td><td>ODECIL</td><td>Thomonde</td><td>La Hoye</td><td>oui</td><td>72</td><td>27</td><td>45</td><td>0.375</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Ami pour le developpement de Thomonde</td><td>oui</td><td>ADETO</td><td>Thomonde</td><td>Ville</td><td>oui</td><td>452</td><td>345</td><td>107</td><td>0.5</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Association pour le developpement de Abricot</td><td>oui</td><td>ADHA</td><td>Cerca la Source</td><td>Acajou brulé 2</td><td>oui</td><td>96</td><td>52</td><td>44</td><td>0.3333333333333333</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Federation des Association de Femmes de Maissade</td><td>non</td><td>FAM</td><td>Maissade</td><td>Ville</td><td>non</td><td>4000</td><td>4000</td><td>0</td><td>1.0</td><td>oui</td><td>2024.0</td><td>4</td><td>2024-04-15</td><td>False</td></tr>
+<tr><td>Centre</td><td>Asosiyasyon Fanm Baltaza </td><td>non</td><td>AFB</td><td>Cerca la Source</td><td>Acajou brule 2</td><td>oui</td><td>150</td><td>75</td><td>75</td><td>0.6666666666666666</td><td>oui</td><td>2025.0</td><td>4</td><td>2025-04-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Konbit Peyzan Gomye</td><td>oui</td><td>KPG</td><td>Roseaux</td><td>Gommiers</td><td>oui</td><td>150</td><td>79</td><td>71</td><td>0.3333333333333333</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Bondye Bay</td><td>oui</td><td>BB</td><td>Roseaux</td><td>Grand vincent</td><td>oui</td><td>65</td><td>30</td><td>35</td><td>0.46153846153846156</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Fanm Vayan Refome</td><td>oui</td><td>FVR</td><td>Roseaux</td><td>Grand vincent</td><td>oui</td><td>70</td><td>70</td><td>0</td><td>1.0</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Mouvman Peyizan Bwa Nef Maolor</td><td>oui</td><td>MOPAB</td><td>Roseaux</td><td>Gommiers</td><td>oui</td><td>57</td><td>22</td><td>35</td><td>0.38596491228070173</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Union des Femmes et des  Garcons de GOMMIER</td><td>oui</td><td>UFGG</td><td>Roseaux</td><td>Gommiers</td><td>oui</td><td>79</td><td>45</td><td>34</td><td>0.6</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Solidarite pour le Developpement de Gommier</td><td>oui</td><td>SODEG</td><td>Roseaux</td><td>Gommiers</td><td>oui</td><td>68</td><td>55</td><td>13</td><td>0.6</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Pa dekouraje</td><td>oui</td><td>OPDG</td><td>Roseaux</td><td>Grand vincent</td><td>oui</td><td>35</td><td>24</td><td>11</td><td>0.6857142857142857</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Oganizasyon Plante Lescave</td><td>oui</td><td>OPL</td><td>Pestel</td><td>Dichuti</td><td>oui</td><td>130</td><td>50</td><td>80</td><td>0.38461538461538464</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Organisation des  Jeunes en  Lutte pour le Developpement de Chardonnette</td><td>non</td><td>OJELDEC</td><td>Beaumont</td><td>Chardonnette</td><td>non</td><td>176</td><td>96</td><td>80</td><td>0.6666666666666666</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Association des Producteurs  Agricoles de Voldrogue</td><td>oui</td><td>APAV</td><td>Jérémie</td><td>Voldrogue</td><td>oui</td><td>475</td><td>236</td><td>239</td><td>0.4968421052631579</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Asosyasyon Kominotèn des Producteurs  Agricoles de Voldrogue</td><td>oui</td><td>ACV</td><td>Jérémie</td><td>Voldrogue</td><td>oui</td><td>145</td><td>85</td><td>60</td><td>0.5862068965517241</td><td>non</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Association des jeunes combattants pour le Chagement et le Développement</td><td>oui</td><td>AJCCD</td><td>Jérémie</td><td>Bas Voldrogue</td><td>oui</td><td>71</td><td>15</td><td>56</td><td>0.2112676056338028</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Boy Brigad Girl</td><td>oui</td><td>BBG</td><td>Jérémie</td><td>Haut Voldrogue</td><td>oui</td><td>79</td><td>36</td><td>43</td><td>0.45569620253164556</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>òganizasyon Peyizan Po-ve</td><td>oui</td><td>OPV</td><td>Jérémie</td><td>Bas Guinaudé</td><td>oui</td><td>165</td><td>85</td><td>80</td><td>0.5151515151515151</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Bank Kominotè  Fanm Sove</td><td>oui</td><td>BAKOFASOV</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>25</td><td>24</td><td>1</td><td>0.96</td><td>non</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Federasyon Peyizan Chouchoun</td><td>oui</td><td>FPC</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>60</td><td>20</td><td>40</td><td>0.3333333333333333</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Oganizasyon Devlopman Economik, Sosyal Voldrog</td><td>oui</td><td>ODESVO</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>25</td><td>12</td><td>13</td><td>0.48</td><td>non</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Bank Kominote Fanm Bigarad </td><td>oui</td><td>BAKOFABI</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>30</td><td>30</td><td>0</td><td>1.0</td><td>oui</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Action de  Timonette</td><td>oui</td><td>AT</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>97</td><td>33</td><td>64</td><td>0.3402061855670103</td><td>non</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Konbit Aksyon Devlopman Lakay</td><td>oui</td><td>KDEL</td><td>Jérémie</td><td>Basse Guinaudée</td><td>oui</td><td>76</td><td>42</td><td>34</td><td>0.5526315789473685</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Koperativ Ajan Pwodikte fwi Gran dans</td><td>oui</td><td>CAPGA</td><td>Jérémie</td><td>Basse Guinaudée</td><td>oui</td><td>120</td><td>48</td><td>72</td><td>0.4</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Bout Kat</td><td>oui</td><td>BK</td><td>Jérémie</td><td>Basse Guinaudée</td><td>oui</td><td>32</td><td>16</td><td>16</td><td>0.5</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Lanmou Sabin</td><td>oui</td><td>LS</td><td>Jérémie</td><td>Grand vincent</td><td>oui</td><td>30</td><td>6</td><td>24</td><td>0.2</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Deside Jan Pyè</td><td>oui</td><td>DJP</td><td>Jérémie</td><td>Grand vincent</td><td>oui</td><td>48</td><td>35</td><td>13</td><td>0.7291666666666666</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Gwoup Prodiktè Ajan  </td><td>oui</td><td>GPAF</td><td>Jérémie</td><td>Basse Guinaudée</td><td>oui</td><td>48</td><td>16</td><td>32</td><td>0.3333333333333333</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Konbit Peyzan Bwa Nèf Malar</td><td>oui</td><td>KPBM</td><td>Roseaux</td><td>Gommiers</td><td>oui</td><td>60</td><td>52</td><td>8</td><td>0.8666666666666667</td><td>non</td><td>2025.0</td><td>8</td><td>2025-08-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Association des  Producteurs /Productrices Agricoles  et de Stockage et de Transformation de la Grand&#039;Anse </td><td>oui</td><td>APASTGA</td><td>Roseaux</td><td>Basse Guinaudée</td><td>oui</td><td>208</td><td>147</td><td>61</td><td>0.7067307692307693</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Fanm Plantè Leon </td><td>oui</td><td>FPL</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>32</td><td>27</td><td>5</td><td>0.84375</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Galile Maro</td><td>oui</td><td>GM</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>30</td><td>16</td><td>14</td><td>0.5333333333333333</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Oganizasyon Tèt Ansanm Kafou  Katon Debaras</td><td>oui</td><td>OTAKK</td><td>Jérémie</td><td>Fond Rouge Torbeck</td><td>oui</td><td>65</td><td>41</td><td>24</td><td>0.6307692307692307</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Tèt Kole Matin</td><td>oui</td><td>TKM</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>190</td><td>90</td><td>100</td><td>0.47368421052631576</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Òganizasyon Tèt Ansanm  Manyè</td><td>oui</td><td>OTAM</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>177</td><td>86</td><td>91</td><td>0.4858757062146893</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Òganizasyon Travayèz Fanm Lafèm</td><td>oui</td><td>OTFL</td><td>Jérémie</td><td>Haute Guinaudée</td><td>en cours</td><td>150</td><td>150</td><td>0</td><td>1.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Konbit Peyizan Despeines</td><td>oui</td><td>KPD</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>256</td><td>150</td><td>106</td><td>0.5859375</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Òganizasyon Peyizan Travayè Bèlvi </td><td>oui</td><td>OTPD</td><td>Jérémie</td><td>Haute Guinaudée</td><td>non</td><td>75</td><td>45</td><td>30</td><td>0.6</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Organisations des  Travailleurs Paysans de David</td><td>oui</td><td>OTPD</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>137</td><td>79</td><td>58</td><td>0.5766423357664233</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Organisaytions des Travailleurs Peyisans de la Rivière Maro</td><td>oui</td><td>OTPR</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>175</td><td>90</td><td>85</td><td>0.5142857142857142</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Organisations des Travailleurs (ses) de Grand Vincent</td><td>oui</td><td>OTPV</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>90</td><td>45</td><td>45</td><td>0.5</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Fanm Konba Leon</td><td>oui</td><td>FKL</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>30</td><td>28</td><td>2</td><td>0.9333333333333333</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Gwoupman Aksyon Kominotè Avansman Matino  </td><td>oui</td><td>GACAM</td><td>Jérémie</td><td>Haute Guinaudée</td><td>oui</td><td>99</td><td>67</td><td>32</td><td>0.6767676767676768</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Groupe de Pr\oducteurs ( trices) des Fruits </td><td>oui</td><td>GPAF</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>25</td><td>11</td><td>14</td><td>0.44</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Asosyasyon Fanm pou Avansman Deschamps</td><td>oui</td><td>ASOFAD</td><td>Jérémie</td><td>Basse Voldrogue</td><td>oui</td><td>199</td><td>199</td><td>0</td><td>1.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Mityel Solidarite Ravin Sab</td><td>oui</td><td>MSRS</td><td>Jérémie</td><td>Fond Rouge Torbeck</td><td>oui</td><td>30</td><td>19</td><td>11</td><td>0.6333333333333333</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Desizyon Fanm  Pou Avanse</td><td>oui</td><td>DFA</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>53</td><td>52</td><td>1</td><td>0.9811320754716981</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Mouvman Peyizan Castillon</td><td>oui</td><td>GARAM</td><td>Jérémie</td><td>Haute Voldrogue</td><td>oui</td><td>132</td><td>100</td><td>32</td><td>0.7575757575757576</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Koperativ Tet Ansanm Lescaves</td><td>oui</td><td>KOTAL</td><td>Pestel</td><td>Duchyti</td><td>oui</td><td>915</td><td>560</td><td>355</td><td>0.6120218579234973</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Grand&#039;Anse</td><td>Cooperation des Producteurs de la Grand&#039;Anse</td><td>oui</td><td>CPGA</td><td>Pestel</td><td>Duchyti</td><td>oui</td><td>212</td><td>114</td><td>98</td><td>0.5377358490566038</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Coordination des Regroupements pour le Developpement d&#039;Arnaud</td><td>oui</td><td>CFGRADA</td><td>Arnaud</td><td>Bareau</td><td>ropanippes</td><td>70</td><td>70</td><td>0</td><td>100.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Òganizasyon Peyizan Solidariite Devlopman nan Lyè</td><td>oui</td><td>OPSDL</td><td>L&#039;Asile</td><td>Lièvre</td><td>ropanippes</td><td>31</td><td>9</td><td>22</td><td>14.3</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Asosyasyon  Peyizan Baradè Laplante </td><td>oui</td><td>APBL</td><td>L&#039;Asile</td><td>Gerin</td><td>ropanippes</td><td>40</td><td>21</td><td>19</td><td>28.6</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Organisation paysanne pour le  Devveloppement du Sud</td><td>oui</td><td>OPDS</td><td>Plaisance du Sud</td><td>Dagou</td><td>ropanippes</td><td>41</td><td>17</td><td>24</td><td>20.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>N ouvelle Version pour le Développement Durable</td><td>oui</td><td>NOVDED</td><td>Barradères</td><td>Gerin</td><td>ropanippes</td><td>60</td><td>25</td><td>35</td><td>40.0</td><td>oui</td><td>2023.0</td><td>9</td><td>2023-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Asosyasyon  Peyizan Baradè  Nip</td><td>oui</td><td>APBN</td><td>Barradères</td><td>Tete  de l&#039;eau</td><td>ropanippes</td><td>338</td><td>142</td><td>196</td><td>14.3</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Organisation Fanm Popilè Lexandre</td><td>oui</td><td>OFPL</td><td>Plaisance du Sud</td><td>Tete  de l&#039;eau</td><td>ropanippes</td><td>30</td><td>29</td><td>1</td><td>85.6</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Oganizasyon Tet Ansanm   pou Developman Plezans Nip</td><td>oui</td><td>OTDPN</td><td>Plaisance du Sud</td><td>Centre Ville</td><td>ropanippes</td><td>36</td><td>12</td><td>24</td><td>42.9</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Oganizasyon Bel Venus Ibeau</td><td>oui</td><td>OBVI</td><td>Barradères</td><td>La plaine</td><td>ropanippes</td><td>35</td><td>18</td><td>17</td><td>60.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Organisation de Developpement Agricole Payisan des Nippes</td><td>oui</td><td>ODAPN</td><td>Barradères</td><td>Centre Ville</td><td>ropanippes</td><td>56</td><td>30</td><td>26</td><td>28.57</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Organisation Devouee pour le Development de Carrefour Michel</td><td>oui</td><td>OPDECM</td><td>L&#039;Asile</td><td>Tournade</td><td>ropanippes</td><td>43</td><td>20</td><td>23</td><td>14.28</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Organisation npour le Paysan Liève</td><td>oui</td><td>ODPLI</td><td>L&#039;Asile</td><td>Lièvre</td><td>ropanippes</td><td>20</td><td>4</td><td>16</td><td>20.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Coordination des Regroupements pour le Developpement d&#039;Arnaud 2ieme Section</td><td>oui</td><td>CFGRADAS</td><td>Arnaud</td><td>Barquier</td><td>ropanippes</td><td>35</td><td>35</td><td>0</td><td>100.0</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Asosyasyon Fanm  Baradè  Laplant</td><td>oui</td><td>AFBL</td><td>Barradères</td><td>Laplante</td><td>ropanippes</td><td>50</td><td>27</td><td>23</td><td>57.14</td><td>non</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Association des Jeunes Progressistes d&#039;Orouk</td><td>oui</td><td>AJPO</td><td>Anse-à-Veau</td><td>Sault du Baril</td><td>ropanippes</td><td>80</td><td>47</td><td>33</td><td>22.22</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Fanm Vanyan Klemaan</td><td>oui</td><td>FVK</td><td>Plaisance du Sud</td><td>0</td><td>ropanippes</td><td>81</td><td>70</td><td>11</td><td>78.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Nippes</td><td>Organisation de l&#039;Union Haitenne de  Plaisance des Nippes</td><td>oui</td><td>OUHPN</td><td>Plaisance du Sud</td><td>02 sectr</td><td>ropanippes</td><td>100</td><td>40</td><td>60</td><td>22.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Assocition Irrigant Welch</td><td>non</td><td>AIW</td><td>Torbeck</td><td>Boury</td><td>kofakad</td><td>250</td><td>120</td><td>130</td><td>14.28</td><td>oui</td><td></td><td>9</td><td></td><td>False</td></tr>
+<tr><td>Sud</td><td>0</td><td>non</td><td>MOPASAK</td><td>Cayes</td><td>1ere section</td><td>kofakad</td><td>200</td><td>50</td><td>150</td><td>11.11</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Muso des femmes de la commune de Chardonniere</td><td>non</td><td>MCCOCHA</td><td>Chardonnieres</td><td>Dejoie</td><td>kofakad</td><td>160</td><td>160</td><td>0</td><td>100.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Kolaborasyon Plante Madame</td><td>non</td><td>KPM</td><td>Torbeck</td><td>1ere section</td><td>kofakad</td><td>50</td><td>30</td><td>20</td><td>33.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Association des irrigants des Anglais</td><td>non</td><td>AIA</td><td>Anglais</td><td>1ere section</td><td>kofakad</td><td>622</td><td>3</td><td>619</td><td>11.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Conseil Communautaire de Massey</td><td>non</td><td>CCM</td><td>Cayes</td><td>4e section</td><td>kofakad</td><td>100</td><td>40</td><td>60</td><td>33.0</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Organisation des marchande planteuse de Dutriche</td><td>non</td><td>OMPD</td><td>Cayes</td><td>Bourdet</td><td>kofakad</td><td>40</td><td>28</td><td>12</td><td>57.14</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr>
+<tr><td>Sud</td><td>Comite Relevman </td><td>non</td><td>COREDA</td><td>Cayes</td><td>Bourdet</td><td>kofakad</td><td>75</td><td>40</td><td>35</td><td>28.57</td><td>oui</td><td>2025.0</td><td>9</td><td>2025-09-15</td><td>False</td></tr></tbody>
+  </table>
+
+  <h2>Issues</h2>
+  <a href="UFAPAL_issues.csv" download>Télécharger UFAPAL_issues.csv</a>
+
+  <table id="issuesTable" class="display">
+    <thead><tr><th>Departement</th><th>Nom de l&#039;organisation</th><th>Commune</th><th>Section Communale</th><th>issues_detail</th></tr></thead>
+    <tbody><tr><td>Grand&#039;Anse</td><td>Òganizasyon Travayèz Fanm Lafèm</td><td>Jérémie</td><td>Haute Guinaudée</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau</td></tr>
+<tr><td>Nippes</td><td>Coordination des Regroupements pour le Developpement d&#039;Arnaud</td><td>Arnaud</td><td>Bareau</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Òganizasyon Peyizan Solidariite Devlopman nan Lyè</td><td>L&#039;Asile</td><td>Lièvre</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Asosyasyon  Peyizan Baradè Laplante </td><td>L&#039;Asile</td><td>Gerin</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Organisation paysanne pour le  Devveloppement du Sud</td><td>Plaisance du Sud</td><td>Dagou</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>N ouvelle Version pour le Développement Durable</td><td>Barradères</td><td>Gerin</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Asosyasyon  Peyizan Baradè  Nip</td><td>Barradères</td><td>Tete  de l&#039;eau</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Organisation Fanm Popilè Lexandre</td><td>Plaisance du Sud</td><td>Tete  de l&#039;eau</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Oganizasyon Tet Ansanm   pou Developman Plezans Nip</td><td>Plaisance du Sud</td><td>Centre Ville</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Oganizasyon Bel Venus Ibeau</td><td>Barradères</td><td>La plaine</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Organisation de Developpement Agricole Payisan des Nippes</td><td>Barradères</td><td>Centre Ville</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Organisation Devouee pour le Development de Carrefour Michel</td><td>L&#039;Asile</td><td>Tournade</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Organisation npour le Paysan Liève</td><td>L&#039;Asile</td><td>Lièvre</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Coordination des Regroupements pour le Developpement d&#039;Arnaud 2ieme Section</td><td>Arnaud</td><td>Barquier</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Asosyasyon Fanm  Baradè  Laplant</td><td>Barradères</td><td>Laplante</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Association des Jeunes Progressistes d&#039;Orouk</td><td>Anse-à-Veau</td><td>Sault du Baril</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Fanm Vanyan Klemaan</td><td>Plaisance du Sud</td><td>0</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Nippes</td><td>Organisation de l&#039;Union Haitenne de  Plaisance des Nippes</td><td>Plaisance du Sud</td><td>02 sectr</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Assocition Irrigant Welch</td><td>Torbeck</td><td>Boury</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>0</td><td>Cayes</td><td>1ere section</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Muso des femmes de la commune de Chardonniere</td><td>Chardonnieres</td><td>Dejoie</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Kolaborasyon Plante Madame</td><td>Torbeck</td><td>1ere section</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Association des irrigants des Anglais</td><td>Anglais</td><td>1ere section</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Conseil Communautaire de Massey</td><td>Cayes</td><td>4e section</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Organisation des marchande planteuse de Dutriche</td><td>Cayes</td><td>Bourdet</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr>
+<tr><td>Sud</td><td>Comite Relevman </td><td>Cayes</td><td>Bourdet</td><td>invalid_l&#039;OPA est elle membre d&#039;un réseau; pct_femmes_out_of_0_1; pct_femmes_like_0_100</td></tr></tbody>
+  </table>
+
+</div>
+
+<script>
+$(document).ready(function() {
+  $('#dataTable').DataTable({ pageLength: 25, scrollX: true });
+  $('#issuesTable').DataTable({ pageLength: 25, scrollX: true });
+});
+</script>
+
+</body>
+</html>
